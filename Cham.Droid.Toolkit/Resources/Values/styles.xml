@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" 
+			xmlns:local="http://schemas.android.com/apk/res-auto">
+
+  <style name="ChamTextView">
+    <item name="android:layout_margin">5dp</item>
+    <item name="HeaderStyle">@style/Header</item>
+    <item name="TextStyle">@style/TextView</item>
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="ChamEditText" parent="ChamTextView">
+    <item name="TextStyle">@style/ClearableEditText</item>
+  </style>
+
+  <style name="ChamDatePicker" parent="ChamTextView">
+  </style>
+
+  <style name="Header" parent="TextView">
+    <item name="android:textColor">#ff074C97</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+  </style>
+
+  <style name="ClearableEditText" parent="@android:style/Widget.EditText">
+    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+  </style>
+
+  <style name="TextView" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">18dp</item>
+    <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+  </style>
+
+
+  <style name="MaxWidthLinearLayout">
+    <item name="maxWidth">800dp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_centerInParent">true</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <style name="DashboardButton">
+    <item name="android:layout_gravity">center_vertical</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:drawablePadding">2dp</item>
+    <item name="android:textSize">16dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#ff29549f</item>
+    <item name="android:background">@null</item>
+  </style>
+  
+</resources>

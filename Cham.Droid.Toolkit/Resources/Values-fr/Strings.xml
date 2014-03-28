@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Camera">Caméra</string>
+  <string name="Delete">Supprimer</string>
+  <string name="Gallery">Galerie</string>
+  <string name="HowDoYouWantToSetYourPicture">Comment voulez-vous choisir votre photo?</string>
+  <string name="Options">Options</string>
+</resources>
