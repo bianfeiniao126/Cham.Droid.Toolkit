@@ -1,4 +1,4 @@
-CHAM.WP.Toolkit
+Cham.Droid.Toolkit
 ===============
 
-Windows phone ToolKit
+Custom controls for Mono Android
