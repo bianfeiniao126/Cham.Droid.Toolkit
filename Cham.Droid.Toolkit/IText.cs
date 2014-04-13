@@ -16,6 +16,6 @@ namespace Cham.Droid.Toolkit
     {
         string Text { get; set; }
 
-        bool Currency { get; set; }
+		//bool Currency { get; set; }
     }
 }
