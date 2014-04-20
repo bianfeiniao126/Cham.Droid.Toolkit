@@ -23,7 +23,7 @@
         <Button
             android:id="@+id/ChamDatePickerButton"
             android:layout_width="40dp"
-            android:layout_height="32dp"
+            android:layout_height="fill_parent"
             android:layout_weight="0.2" />
     </LinearLayout>
 </LinearLayout>

@@ -32,7 +32,7 @@ namespace Cham.Droid.Toolkit
 		{
 			((Activity)Context).LayoutInflater.Inflate (LayoutId, this);
 			var headerTextView = FindViewById<TextView> (Resource.Id.ChamHeader);
-			var editText = FindViewById<ClearableEditText> (Resource.Id.ChamTextEdit_EditText);
+			var editText = FindViewById<ClearableEditText> (EditTextId);
 			ChamEditTextOwner = new ChamEditTextOwner (headerTextView, editText, attrs, defStyle);
 			editText.FocusChange += editText_FocusChange;
 			editText.AfterTextChanged += EditTextAfterTextChanged;
@@ -49,6 +49,8 @@ namespace Cham.Droid.Toolkit
 		#region Properties
 
 		protected virtual int LayoutId { get { return Resource.Layout.ChamEditTextLayout; } }
+
+		protected virtual int EditTextId { get { return Resource.Id.ChamTextEdit_EditText; } }
 
 		protected ChamEditTextOwner ChamEditTextOwner { get; set; }
 

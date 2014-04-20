@@ -25,6 +25,9 @@
     <attr name="Currency" format="boolean" />
   </declare-styleable>
 
+  <declare-styleable name="ChamDatePicker" parent="ChamText">
+  </declare-styleable>
+
   <declare-styleable name="ChamEditText" parent="ChamText">
     <attr name="ReadOnly" format="boolean" />
     <attr name="android:imeOptions"/> 

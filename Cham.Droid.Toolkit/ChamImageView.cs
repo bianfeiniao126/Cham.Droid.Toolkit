@@ -11,7 +11,6 @@ using Android.Views;
 using Android.Widget;
 using Android.Util;
 using Android.Graphics;
-using Android.Support.V4.App;
 using Android.Net;
 using System.IO;
 
@@ -108,7 +107,7 @@ namespace Cham.Droid.Toolkit
 				pictureActionIntent.SetType ("image/*");
 				pictureActionIntent.PutExtra ("return-data", true);
 				code = GALLERY_PICTURE;
-				var fm = ((FragmentActivity)Context).SupportFragmentManager;
+				var fm = ((Activity)Context).FragmentManager;
 				var tmpFragment = new TmpFragment ();
 				tmpFragment.ActivityResult += tmpFragment_ActivityResult;
 				fm.BeginTransaction ().Add (tmpFragment, "FRAGMENT_TAG").Commit ();
@@ -118,7 +117,7 @@ namespace Cham.Droid.Toolkit
 			{
 				pictureActionIntent = new Intent (Android.Provider.MediaStore.ActionImageCapture);
 				code = CAMERA_REQUEST;
-				var fm = ((FragmentActivity)Context).SupportFragmentManager;
+				var fm = ((Activity)Context).FragmentManager;
 				var tmpFragment = new TmpFragment ();
 				tmpFragment.ActivityResult += tmpFragment_ActivityResult;
 				fm.BeginTransaction ().Add (tmpFragment, "FRAGMENT_TAG").Commit ();
@@ -151,7 +150,7 @@ namespace Cham.Droid.Toolkit
 		{
 			if (e.RequestCode == GALLERY_PICTURE)
 			{
-				if (e.ResultCode == -1)
+				if (e.ResultCode == Result.Ok)
 				{
 					if (e.Data != null)
 					{
@@ -192,7 +191,7 @@ namespace Cham.Droid.Toolkit
 				}
 			} else if (e.RequestCode == CAMERA_REQUEST)
 			{
-				if (e.ResultCode == -1)
+				if (e.ResultCode == Result.Ok)
 				{
 					if (e.Data.HasExtra ("data"))
 					{
