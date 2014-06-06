@@ -73,13 +73,13 @@ namespace Cham.Droid.Toolkit
 		void Button_Click (object sender, EventArgs e)
 		{
 		    var value = Value ?? DateTime.Today;
-            var dialog = new DatePickerDialog(Context, this, value.Year, value.Month, value.Day);
+			var dialog = new DatePickerDialog(Context, this, value.Year, value.Month - 1, value.Day);
 			dialog.Show ();
 		}
 
 		public void OnDateSet (DatePicker view, int year, int monthOfYear, int dayOfMonth)
 		{
-			Value = new DateTime (year, monthOfYear, dayOfMonth);
+			Value = new DateTime (year, monthOfYear + 1, dayOfMonth);
 			if (ValueChanged != null)
 				ValueChanged (this, EventArgs.Empty);
 		}

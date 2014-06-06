@@ -8,7 +8,7 @@ namespace Cham.Droid.Toolkit
     public class DashboardLayout : ViewGroup
     {
 
-        private int UNEVEN_GRID_PENALTY_MULTIPLIER = 10;
+		private int UNEVEN_GRID_PENALTY_MULTIPLIER = 10;
 
         private int mMaxChildWidth = 0;
         private int mMaxChildHeight = 0;

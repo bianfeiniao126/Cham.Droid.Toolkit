@@ -46,6 +46,11 @@ namespace Cham.Droid.Toolkit
 			}
 		}
 
+		public void ForceTextChanged()
+		{
+			OnAfterTextChanged ();
+		}
+
 		#region Properties
 
 		protected virtual int LayoutId { get { return Resource.Layout.ChamEditTextLayout; } }
