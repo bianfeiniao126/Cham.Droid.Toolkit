@@ -35,6 +35,7 @@ namespace Cham.Droid.Toolkit
 			var editText = FindViewById<ClearableEditText> (EditTextId);
 			ChamEditTextOwner = new ChamEditTextOwner (headerTextView, editText, attrs, defStyle);
 			editText.FocusChange += editText_FocusChange;
+			editText.AfterTextChangedEx += EditTextAfterTextChangedEx;
 			editText.AfterTextChanged += EditTextAfterTextChanged;
 		}
 
@@ -105,6 +106,11 @@ namespace Cham.Droid.Toolkit
 		private void EditTextAfterTextChanged (object sender, EventArgs e)
 		{
 			//OnAfterTextChanged ();
+		}
+
+		private void EditTextAfterTextChangedEx (object sender, EventArgs e)
+		{
+			OnAfterTextChanged ();
 		}
 
 		#endregion

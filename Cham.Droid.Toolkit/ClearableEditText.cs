@@ -11,6 +11,7 @@ namespace Cham.Droid.Toolkit
 	public class ClearableEditText : EditText
 	{
 		private Drawable xD;
+		public EventHandler AfterTextChangedEx;
 
 		protected ClearableEditText (IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer) : base (javaReference, transfer)
 		{
@@ -79,6 +80,7 @@ namespace Cham.Droid.Toolkit
 
 		private void Init ()
 		{
+			AfterTextChanged += ClearableEditTextAfterTextChanged;
 			xD = GetCompoundDrawables () [2];
 			if (xD == null)
 			{
@@ -86,6 +88,17 @@ namespace Cham.Droid.Toolkit
 			}
 			xD.SetBounds (0, 0, 25, 25);
 			ClearIconVisible = false;
+		}
+
+		private void ClearableEditTextAfterTextChanged (object sender, EventArgs e)
+		{
+			//OnAfterTextChanged ();
+		}
+
+		private void OnAfterTextChanged ()
+		{
+			if (AfterTextChangedEx != null)
+				AfterTextChangedEx (this, EventArgs.Empty);
 		}
 
 		private int GetDefaultClearIconId ()
@@ -96,6 +109,13 @@ namespace Cham.Droid.Toolkit
 				id = Android.Resource.Drawable.PresenceOffline;
 			}
 			return id;
+		}
+
+		public void ForceTextChanged()
+		{
+			var evt = AfterTextChangedEx;
+			if (evt != null)
+				evt(this, EventArgs.Empty);
 		}
 	}
 }

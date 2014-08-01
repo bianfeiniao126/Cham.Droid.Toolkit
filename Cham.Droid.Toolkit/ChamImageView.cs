@@ -67,7 +67,7 @@ namespace Cham.Droid.Toolkit
 				{
 					BitmapFactory.Options options = new BitmapFactory.Options ();
 					options.InJustDecodeBounds = true;
-					var bitmap = BitmapFactory.DecodeByteArray (_image, 0, _image.Length, options);
+					var bitmap = BitmapFactory.DecodeByteArray (_image, 0, _image.Length);
 					SetImageBitmap (bitmap);
 				}
 				if (ImageChanged != null)
@@ -172,7 +172,7 @@ namespace Cham.Droid.Toolkit
 							Image = stream.ToArray ();
 
 							//bitmap = Bitmap.CreateScaledBitmap (bitmap, 100, 100, false);
-							//SetImageBitmap (bitmap);
+							SetImageBitmap (bitmap);
 
 						} else
 						{
@@ -216,12 +216,14 @@ namespace Cham.Droid.Toolkit
 							cursor.Close ();
 						}
 
-						Log.Info ("path of the image from camera ====> ", selectedImagePath);
+						//Log.Info ("path of the image from camera ====> ", selectedImagePath);
 
-
-						bitmap = Bitmap.CreateScaledBitmap (bitmap, 100, 100, false);
+						var stream = new MemoryStream ();
+						bitmap.Compress (Bitmap.CompressFormat.Png, 100, stream);
+						Image = stream.ToArray ();
+						//bitmap = Bitmap.CreateScaledBitmap (bitmap, 100, 100, false);
 						// update the image view with the bitmap
-						SetImageBitmap (bitmap);
+						//SetImageBitmap (bitmap);
 					} else if (e.Data.Extras == null)
 					{
 						Toast.MakeText (Context, "No extras to retrieve!", ToastLength.Short).Show ();
