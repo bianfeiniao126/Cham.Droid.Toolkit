@@ -86,6 +86,11 @@ namespace Cham.Droid.Toolkit
                 , _required ? RequiredSuffix : string.Empty);
         }
 
+		public bool RequestFocus()
+		{
+			return TextView.RequestFocus ();
+		}
+
         #endregion
     }
 }

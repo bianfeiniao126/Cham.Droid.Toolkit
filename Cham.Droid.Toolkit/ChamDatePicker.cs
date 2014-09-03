@@ -84,7 +84,10 @@ namespace Cham.Droid.Toolkit
 				ValueChanged (this, EventArgs.Empty);
 		}
 
+		public new bool RequestFocus()
+		{
+			return ChamDatePickerOwner.RequestFocus ();
+		}
 
-        
     }
 }

@@ -25,7 +25,6 @@ namespace Cham.Droid.Toolkit
         public ChamDatePickerOwner(TextView headerTextView, TextView textView, IAttributeSet attrs, int defStyle)
             : base(headerTextView, textView, attrs, defStyle)
         {
-            
         }
 
         #endregion

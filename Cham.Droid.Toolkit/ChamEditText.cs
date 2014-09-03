@@ -99,6 +99,11 @@ namespace Cham.Droid.Toolkit
 				AfterTextChanged (this, EventArgs.Empty);
 		}
 
+		public new bool RequestFocus()
+		{
+			return ChamEditTextOwner.RequestFocus ();
+		}
+
 		#endregion
 
 		#region Events

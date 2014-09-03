@@ -17,5 +17,7 @@ namespace Cham.Droid.Toolkit
         string Error { set; }
 
         bool Required { get; set; }
+
+		bool RequestFocus();
     }
 }
