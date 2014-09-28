@@ -31,7 +31,7 @@ namespace Cham.Droid.Toolkit
 		{
 			((Activity)Context).LayoutInflater.Inflate (Resource.Layout.ChamTextViewLayout, this);
 			var headerTextView = FindViewById<TextView> (Resource.Id.ChamHeader);
-            headerTextView.PaintFlags = headerTextView.PaintFlags | PaintFlags.UnderlineText;
+            //headerTextView.PaintFlags = headerTextView.PaintFlags | PaintFlags.UnderlineText;
 			var textView = FindViewById<TextView> (Resource.Id.ChamTextView);
 			ChamTextOwner = new ChamTextOwner (headerTextView, textView, attrs, defStyle);
 		}
