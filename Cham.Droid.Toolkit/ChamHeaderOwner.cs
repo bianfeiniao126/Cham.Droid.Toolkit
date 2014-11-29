@@ -39,6 +39,7 @@ namespace Cham.Droid.Toolkit
                     {
                         HeaderTextView.SetTextAppearance(HeaderTextView.Context, a.GetResourceId(attr, Android.Resource.Style.TextAppearance));
                     }
+
                 }
             }
             finally

@@ -17,12 +17,14 @@
     <attr name="Header" format="string" />
     <attr name="Required" format="boolean" />
     <attr name="HeaderStyle" format="reference" />
+
   </declare-styleable>
 
   <declare-styleable name="ChamText" parent="ChamHeader">
     <attr name="Text" format="string" />
     <attr name="TextStyle" format="reference" />
     <attr name="Currency" format="boolean" />
+    <attr name="TextUnderline" format="boolean" />
   </declare-styleable>
 
   <declare-styleable name="ChamDatePicker" parent="ChamText">

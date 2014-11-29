@@ -40,7 +40,7 @@ namespace Cham.Droid.Toolkit
 
 		#region Properties
 
-		private ChamTextOwner ChamTextOwner { get; set; }
+		public ChamTextOwner ChamTextOwner { get; set; }
 
 		public string Text
 		{

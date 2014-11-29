@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Util;
+using Android.Graphics;
 
 namespace Cham.Droid.Toolkit
 {
@@ -30,6 +31,7 @@ namespace Cham.Droid.Toolkit
             var a = TextView.Context.Theme.ObtainStyledAttributes(attrs, Resource.Styleable.ChamText, defStyle, Resource.Style.ChamTextView);
             var text = string.Empty;
             var textStyle = Android.Resource.Style.TextAppearance;
+			bool underline = false;
             try
             {
                 for (var i = 0; i < a.IndexCount; i++)
@@ -41,6 +43,10 @@ namespace Cham.Droid.Toolkit
                         textStyle = a.GetResourceId(attr, textStyle);
                     else if (attr == Resource.Styleable.ChamText_Currency)
                         Currency = a.GetBoolean(attr, false);
+					else if(attr == Resource.Styleable.ChamText_TextUnderline)
+					{
+						underline = a.GetBoolean(attr, false);
+					}
                 }
             }
             finally
@@ -49,6 +55,7 @@ namespace Cham.Droid.Toolkit
             }
 
             TextView.SetTextAppearance(TextView.Context, textStyle);
+			if(underline) TextView.PaintFlags = TextView.PaintFlags | PaintFlags.UnderlineText;
             Text = text;
         }
 

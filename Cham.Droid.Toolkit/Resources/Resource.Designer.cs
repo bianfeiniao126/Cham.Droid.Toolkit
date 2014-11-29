@@ -48,8 +48,8 @@ namespace Cham.Droid.Toolkit
 			// aapt resource value: 0x7f010007
 			public static int HeaderStyle = 2130771975;
 			
-			// aapt resource value: 0x7f01000b
-			public static int ReadOnly = 2130771979;
+			// aapt resource value: 0x7f01000c
+			public static int ReadOnly = 2130771980;
 			
 			// aapt resource value: 0x7f010006
 			public static int Required = 2130771974;
@@ -59,6 +59,9 @@ namespace Cham.Droid.Toolkit
 			
 			// aapt resource value: 0x7f010009
 			public static int TextStyle = 2130771977;
+			
+			// aapt resource value: 0x7f01000b
+			public static int TextUnderline = 2130771979;
 			
 			// aapt resource value: 0x7f010004
 			public static int maxWidth = 2130771972;
@@ -240,7 +243,7 @@ namespace Cham.Droid.Toolkit
 					16843101,
 					16843296,
 					16843364,
-					2130771979};
+					2130771980};
 			
 			// aapt resource value: 6
 			public static int ChamEditText_ReadOnly = 6;
@@ -280,7 +283,8 @@ namespace Cham.Droid.Toolkit
 			public static int[] ChamText = new int[] {
 					2130771976,
 					2130771977,
-					2130771978};
+					2130771978,
+					2130771979};
 			
 			// aapt resource value: 2
 			public static int ChamText_Currency = 2;
@@ -290,6 +294,9 @@ namespace Cham.Droid.Toolkit
 			
 			// aapt resource value: 1
 			public static int ChamText_TextStyle = 1;
+			
+			// aapt resource value: 3
+			public static int ChamText_TextUnderline = 3;
 			
 			public static int[] MaxWidthLinearLayout = new int[] {
 					2130771972};
