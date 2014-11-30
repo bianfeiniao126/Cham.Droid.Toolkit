@@ -37,8 +37,11 @@ namespace CHAM.Android.TestApp
 			global::Cham.Droid.Toolkit.Resource.Attribute.Required = global::CHAM.Android.TestApp.Resource.Attribute.Required;
 			global::Cham.Droid.Toolkit.Resource.Attribute.Text = global::CHAM.Android.TestApp.Resource.Attribute.Text;
 			global::Cham.Droid.Toolkit.Resource.Attribute.TextStyle = global::CHAM.Android.TestApp.Resource.Attribute.TextStyle;
+			global::Cham.Droid.Toolkit.Resource.Attribute.TextUnderline = global::CHAM.Android.TestApp.Resource.Attribute.TextUnderline;
 			global::Cham.Droid.Toolkit.Resource.Attribute.maxWidth = global::CHAM.Android.TestApp.Resource.Attribute.maxWidth;
 			global::Cham.Droid.Toolkit.Resource.Drawable.calendar = global::CHAM.Android.TestApp.Resource.Drawable.calendar;
+			global::Cham.Droid.Toolkit.Resource.Drawable.calendar2 = global::CHAM.Android.TestApp.Resource.Drawable.calendar2;
+			global::Cham.Droid.Toolkit.Resource.Drawable.clear = global::CHAM.Android.TestApp.Resource.Drawable.clear;
 			global::Cham.Droid.Toolkit.Resource.Drawable.delete_icon = global::CHAM.Android.TestApp.Resource.Drawable.delete_icon;
 			global::Cham.Droid.Toolkit.Resource.Drawable.picture = global::CHAM.Android.TestApp.Resource.Drawable.picture;
 			global::Cham.Droid.Toolkit.Resource.Id.ChamDatePickerButton = global::CHAM.Android.TestApp.Resource.Id.ChamDatePickerButton;
@@ -84,6 +87,7 @@ namespace CHAM.Android.TestApp
 			global::Cham.Droid.Toolkit.Resource.Styleable.ChamText_Currency = global::CHAM.Android.TestApp.Resource.Styleable.ChamText_Currency;
 			global::Cham.Droid.Toolkit.Resource.Styleable.ChamText_Text = global::CHAM.Android.TestApp.Resource.Styleable.ChamText_Text;
 			global::Cham.Droid.Toolkit.Resource.Styleable.ChamText_TextStyle = global::CHAM.Android.TestApp.Resource.Styleable.ChamText_TextStyle;
+			global::Cham.Droid.Toolkit.Resource.Styleable.ChamText_TextUnderline = global::CHAM.Android.TestApp.Resource.Styleable.ChamText_TextUnderline;
 			global::Cham.Droid.Toolkit.Resource.Styleable.MaxWidthLinearLayout = global::CHAM.Android.TestApp.Resource.Styleable.MaxWidthLinearLayout;
 			global::Cham.Droid.Toolkit.Resource.Styleable.MaxWidthLinearLayout_maxWidth = global::CHAM.Android.TestApp.Resource.Styleable.MaxWidthLinearLayout_maxWidth;
 		}
@@ -112,8 +116,8 @@ namespace CHAM.Android.TestApp
 			// aapt resource value: 0x7f010007
 			public const int HeaderStyle = 2130771975;
 			
-			// aapt resource value: 0x7f01000b
-			public const int ReadOnly = 2130771979;
+			// aapt resource value: 0x7f01000c
+			public const int ReadOnly = 2130771980;
 			
 			// aapt resource value: 0x7f010006
 			public const int Required = 2130771974;
@@ -123,6 +127,9 @@ namespace CHAM.Android.TestApp
 			
 			// aapt resource value: 0x7f010009
 			public const int TextStyle = 2130771977;
+			
+			// aapt resource value: 0x7f01000b
+			public const int TextUnderline = 2130771979;
 			
 			// aapt resource value: 0x7f010004
 			public const int maxWidth = 2130771972;
@@ -144,13 +151,19 @@ namespace CHAM.Android.TestApp
 			public const int calendar = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int delete_icon = 2130837505;
+			public const int calendar2 = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Icon = 2130837506;
+			public const int clear = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int picture = 2130837507;
+			public const int delete_icon = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Icon = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int picture = 2130837509;
 			
 			static Drawable()
 			{
@@ -273,6 +286,9 @@ namespace CHAM.Android.TestApp
 			// aapt resource value: 0x7f050003
 			public const int Header = 2131034115;
 			
+			// aapt resource value: 0x7f050008
+			public const int LinkTextView = 2131034120;
+			
 			// aapt resource value: 0x7f050006
 			public const int MaxWidthLinearLayout = 2131034118;
 			
@@ -319,7 +335,7 @@ namespace CHAM.Android.TestApp
 					16843101,
 					16843296,
 					16843364,
-					2130771979};
+					2130771980};
 			
 			// aapt resource value: 6
 			public const int ChamEditText_ReadOnly = 6;
@@ -359,7 +375,8 @@ namespace CHAM.Android.TestApp
 			public static int[] ChamText = new int[] {
 					2130771976,
 					2130771977,
-					2130771978};
+					2130771978,
+					2130771979};
 			
 			// aapt resource value: 2
 			public const int ChamText_Currency = 2;
@@ -369,6 +386,9 @@ namespace CHAM.Android.TestApp
 			
 			// aapt resource value: 1
 			public const int ChamText_TextStyle = 1;
+			
+			// aapt resource value: 3
+			public const int ChamText_TextUnderline = 3;
 			
 			public static int[] MaxWidthLinearLayout = new int[] {
 					2130771972};

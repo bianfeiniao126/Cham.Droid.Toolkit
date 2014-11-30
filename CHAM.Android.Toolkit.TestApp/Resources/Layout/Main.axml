@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -8,8 +9,15 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/Hello" />
-    <Cham.Android.Toolkit.Views.ChamTextEdit
+    <Cham.Droid.Toolkit.ChamTextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" />
+        local:Text="Test underline"
+        local:TextUnderline="true" />
+    <Cham.Droid.Toolkit.ChamEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Cham.Droid.Toolkit.ChamDatePicker
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

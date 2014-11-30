@@ -83,10 +83,16 @@ namespace Cham.Droid.Toolkit
 			public static int calendar = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public static int delete_icon = 2130837505;
+			public static int calendar2 = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public static int picture = 2130837506;
+			public static int clear = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public static int delete_icon = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public static int picture = 2130837508;
 			
 			static Drawable()
 			{

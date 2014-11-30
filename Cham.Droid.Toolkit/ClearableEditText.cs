@@ -84,7 +84,7 @@ namespace Cham.Droid.Toolkit
 			xD = GetCompoundDrawables () [2];
 			if (xD == null)
 			{
-				xD = Resources.GetDrawable (GetDefaultClearIconId ());
+				xD = Resources.GetDrawable (/*GetDefaultClearIconId ()*/Resource.Drawable.clear);
 			}
 			xD.SetBounds (0, 0, 25, 25);
 			ClearIconVisible = false;

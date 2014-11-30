@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Cham.Droid.Toolkit</id>
+    <version>1.0.11</version>
+    <title>Cham.Droid.Toolkit</title>
+    <authors>mch</authors>
+    <owners>Mourad CHAMA</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Droid toolkit</description>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Cham.Droid.Toolkit\bin\Release\Cham.Droid.Toolkit.dll" target="lib\MonoAndroid\Cham.Droid.Toolkit.dll" />
+    <file src="..\Cham.Droid.Toolkit\bin\Release\Cham.Droid.Toolkit.pdb" target="lib\MonoAndroid\Cham.Droid.Toolkit.pdb" />
+  </files>
+</package>

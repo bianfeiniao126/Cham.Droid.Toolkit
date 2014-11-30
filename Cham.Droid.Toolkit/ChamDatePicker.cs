@@ -35,7 +35,7 @@ namespace Cham.Droid.Toolkit
             ChamDatePickerOwner = new ChamDatePickerOwner(headerTextView, textView, attrs, defStyle);
             Button = FindViewById<Button>(Resource.Id.ChamDatePickerButton);
 			Button.Click += Button_Click;
-			Button.SetBackgroundResource (Android.Resource.Drawable.IcMenuMyCalendar);
+			Button.SetBackgroundResource (/*Android.Resource.Drawable.IcMenuMyCalendar*/ Resource.Drawable.calendar2);
 		}
 
         #region Properties

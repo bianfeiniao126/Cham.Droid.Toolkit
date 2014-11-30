@@ -87,6 +87,7 @@ namespace Cham.Droid.Toolkit
         protected override void UpdateHeader()
         {
             base.UpdateHeader();
+           
             HeaderTextView.Text = string.Format("{0}{1}{2}"
                 , _header
                 , _currency ? string.Format(" ({0})", System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencySymbol) : string.Empty
