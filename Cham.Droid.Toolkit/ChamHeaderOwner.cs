@@ -59,6 +59,7 @@ namespace Cham.Droid.Toolkit
             get { return HeaderTextView.Text; }
             set
             {
+				System.Diagnostics.Debugger.Break ();
                 _header = value;
                 UpdateHeader();
             }
